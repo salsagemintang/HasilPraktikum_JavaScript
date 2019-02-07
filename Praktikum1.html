@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Konversi</title>
+    </head>
+        <SCRIPT language="Javascript">
+        function test(){
+            var a=document.kirim.T1.value
+            if(a>=93  && a<=100)
+                document.kirim.T2.value="A"
+            if(a>=83 && a<=92)
+                document.kirim.T2.value="B"
+            if(a>=75 && a<=82)
+                document.kirim.T2.value="C"
+            if(a>=50 && a<=74)
+                document.kirim.T2.value="D"
+            if(a>=0 && a<=49)
+                document.kirim.T2.value="E"
+        }
+        </SCRIPT>
+        <body>
+            <form method="POST" name="kirim">
+                <p>Nilai<input type="text" name="T1" size="20"> <br></p>
+                <p><input type="button" value="TEBAK" name="B1" onclick=test()>
+                </p>
+                <p>Keterangan<input type="text" name="T2" size="20">
+                </p>
+
+            </form>
+        </body>
+</html>
